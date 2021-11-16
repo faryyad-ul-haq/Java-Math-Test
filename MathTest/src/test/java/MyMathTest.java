@@ -21,8 +21,8 @@ public class MyMathTest {
 	@Test
 	public void testMultiply() {
 		MyMath mymath = new MyMath();
-		int multiply = mymath.myMultiply(3, 6);
-		assertEquals(-3, multiply);	
+		int multiply = mymath.myMultiply(7, 3);
+		assertEquals(21, multiply);	
 	}
 
 }
