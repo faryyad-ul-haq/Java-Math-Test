@@ -17,5 +17,12 @@ public class MyMathTest {
 		int subtract = mymath.mySubtract(3, 6);
 		assertEquals(-3, subtract);	
 	}
+	
+	@Test
+	public void testMultiply() {
+		MyMath mymath = new MyMath();
+		int multiply = mymath.myMultiply(3, 6);
+		assertEquals(-3, multiply);	
+	}
 
 }
