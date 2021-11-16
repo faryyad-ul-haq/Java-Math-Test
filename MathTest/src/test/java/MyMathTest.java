@@ -24,5 +24,12 @@ public class MyMathTest {
 		int multiply = mymath.myMultiply(7, 3);
 		assertEquals(21, multiply);	
 	}
+	
+	@Test
+	public void testDivide() {
+		MyMath mymath = new MyMath();
+		int divide = mymath.myDivide(99, 3);
+		assertEquals(33, divide);	
+	}
 
 }
