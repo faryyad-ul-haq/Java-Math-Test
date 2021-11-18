@@ -17,7 +17,7 @@ public class GeometryTest {
 	  
 	  geometry geo = new geometry();
 	  float peri = geo.perimeterRect(5,4);
-	  Assert.assertEquals(20,peri);
+	  Assert.assertEquals(18,peri);
   }
   
   @Test
@@ -25,7 +25,8 @@ public class GeometryTest {
 	  
 	  geometry geo = new geometry();
 	  float vol = geo.volumeSPhere(4);
-	  Assert.assertEquals(64,vol);
+	  float expected = (4/3)*(22/7)*(4*4*4);
+	  Assert.assertEquals(expected,vol);
   }
   
   @Test
@@ -33,7 +34,8 @@ public class GeometryTest {
 	  
 	  geometry geo = new geometry();
 	  float sur = geo.surfaceAreaSphere(6);
-	  Assert.assertEquals(314.2857142857142857142857142857,sur);
+	  float expected = 4 *(22/7)*(4*4);
+	  Assert.assertEquals(expected,sur);
   }
   
 }
